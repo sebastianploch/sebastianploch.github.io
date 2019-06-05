@@ -134,7 +134,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: #03a9f4;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -433,18 +433,18 @@
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #007ac1;
 		border: 0;
 		cursor: pointer;
 		@include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("images/overlay.png")'));
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #9ececc;
+			background-color: #03a9f4;
 		}
 
 		&:active {
-			background-color: #7eaeac;
+			background-color: #03a9f4;
 		}
 	}
 
@@ -600,7 +600,7 @@
 						color: #fff;
 
 						span::before {
-							color: #e27689;
+							color: #03a9f4;
 						}
 					}
 				}
