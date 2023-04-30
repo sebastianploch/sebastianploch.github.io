@@ -4,7 +4,7 @@
   "description": "Personal website + blog",
   "main": "index.js",
   "scripts": {
-    "build": "npx eleventy",
+    "build": "env NODE_ENV=production npx eleventy",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
