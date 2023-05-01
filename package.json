@@ -10,13 +10,20 @@
     "prod:eleventy": "eleventy",
     "prod:parcel": "parcel build ./_assets/js/main.js --dist-dir ./_site/assets"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limanniel/limanniel.github.io.git"
+  },
   "keywords": [
     "blog",
     "website",
     "portfolio"
   ],
   "author": "Sebastian Ploch",
-  "license": "ISC",
+  "license": "MIT",
+  "browserslist": [
+    "last 4 versions"
+  ],
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@parcel/transformer-sass": "^2.8.3",
@@ -25,7 +32,6 @@
     "parcel": "^2.8.3"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.3.0-alpha3"
   }
 }
