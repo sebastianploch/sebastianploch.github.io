@@ -2,11 +2,13 @@
   "name": "website",
   "version": "1.0.0",
   "description": "Personal website + blog",
-  "main": "index.js",
   "scripts": {
-    "build": "env NODE_ENV=production npx eleventy",
-    "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "start": "npm-run-all --parallel dev:*",
+    "build": "run-s prod:*",
+    "dev:eleventy": "eleventy --serve",
+    "dev:parcel": "parcel watch ./_assets/js/main.js --dist-dir ./_site/assets",
+    "prod:eleventy": "eleventy",
+    "prod:parcel": "parcel build ./_assets/js/main.js --dist-dir ./_site/assets"
   },
   "keywords": [
     "blog",
@@ -17,13 +19,13 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@parcel/transformer-sass": "^2.8.3",
     "moment": "^2.29.4",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.8.3"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
-    "jquery": "^3.6.4",
-    "popper.js": "^1.16.1"
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.3.0-alpha3"
   }
 }
