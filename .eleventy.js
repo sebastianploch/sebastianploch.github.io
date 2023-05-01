@@ -3,6 +3,8 @@ const moment = require('moment');
 moment.locale('en');
  
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
+
   eleventyConfig.addFilter('dateIso', date => {
     return moment(date).toISOString();
   });
