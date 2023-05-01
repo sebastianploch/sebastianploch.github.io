@@ -1,5 +1,5 @@
 ---
-layout: post-layout.njk 
+layout: default
 title: Under Construction
 date: 2019-06-01
 tags: ['post']
