@@ -1,3 +1,4 @@
- {% include "shared/header.njk" %}
- {{ content | safe }}
- {% include "shared/footer.njk" %}
+{% include "shared/header.njk" %}
+{% include "shared/navbar.njk" %}
+{{ content | safe }}
+{% include "shared/footer.njk" %}
