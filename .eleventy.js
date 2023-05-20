@@ -6,6 +6,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  eleventyConfig.addPassthroughCopy("CNAME");
+
   eleventyConfig.addFilter("dateIso", (date) => {
     return moment(date).toISOString();
   });
