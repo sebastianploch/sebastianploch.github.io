@@ -4,15 +4,13 @@ moment.locale("en");
 
 module.exports = function (eleventyConfig) {
   // Plugins
-  const eleventyImgPlugin = require("@11ty/eleventy-img");
+  //const eleventyImgPlugin = require("@11ty/eleventy-img");
   const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
   const eleventySyntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(eleventyImgPlugin);
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
-    eleventyConfig.addPlugin(eleventySyntaxHighlightPlugin);
-  };
+  //eleventyConfig.addPlugin(eleventyImgPlugin);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(eleventySyntaxHighlightPlugin);
 
   // Layouts
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
