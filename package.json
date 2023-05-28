@@ -20,7 +20,7 @@
     "portfolio"
   ],
   "author": "Sebastian Ploch",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "browserslist": [
     "last 4 versions"
   ],
