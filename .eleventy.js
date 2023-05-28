@@ -5,8 +5,11 @@ moment.locale("en");
 module.exports = function (eleventyConfig) {
   // Plugins
   const eleventyImgPlugin = require("@11ty/eleventy-img");
+  const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyImgPlugin);
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
   };
 
   // Layouts
